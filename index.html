@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> click here choi ehe 💜</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Georgia, serif;
+    background: linear-gradient(to right, #f723bb, #c6a6ed);
+    color: rgb(33, 9, 29);
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 430px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #fcf9fdcf;
+    border-radius: 20px;
+}
+
+h1 {
+    color: #140f16;
+    font-size: 28px;
+}
+
+.subtitle {
+    line-height: 1.6;
+}
+
+.envelope {
+    font-size: 120px;
+    margin: 40px auto;
+    cursor: pointer;
+    position: relative;
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px #b9066b;
+    height: 180PX;
+    background: #f0e0fe;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background: #f059ca;
+    color: #21191f;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 8px;
+}
+
+button:hover {
+    background: rgb(192, 245, 192);
+}
+
+.letter {
+    display: none;
+    background: rgb(178, 229, 228);
+    color: #120509;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: left;
+    line-height: 1.7;
+    margin-top: 20px;
+}
+
+.letter h2 {
+    text-align: center;
+    color: #061515;
+}
+
+.surprise {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px dashed rgb(21, 5, 5);
+    border-radius: 15px;
+    line-height: 1.7;
+}
+
+.footer {
+    font-size: 12px;
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="stars" style="top:10%;left:10%">✦</div>
+<div class="stars" style="top:20%;right:12%">♡</div>
+<div class="stars" style="top:70%;left:8%">✧</div>
+<div class="stars" style="bottom:10%;right:10%">💜</div>
+
+<div class="container">
+
+    <h1>Happy 18th Birthday Choi!🎂</h1>
+
+    <p class="subtitle">
+        To someone who makes my life a little more beautiful.
+        I made a simple letter for you. I hope you like it po hehehe. 💜
+    </p>
+
+    <div class="envelope" onclick="openLetter()">💌</div>
+
+    <button onclick="openLetter()">Open ♡</button>
+
+    <div class="letter" id="letter">
+
+        <h2>Dear, My Baby 💜</h2>
+
+        <p>
+        Happy Birthday Po!I hope you enjoy your day today because it is a special day to celebrates.
+        </p>
+
+        <p>
+        Even know wala nata naga storya, i always remember your birthday, your special day I wish nga happy ka everyday po.  
+        </p>
+
+        <p>
+        I pray that God will continue to guide you,
+        protect you, and bless you with good health,
+        happiness, wisdom, and success.
+        May all your dreams slowly become reality.
+        </p>
+
+        <p>
+        No matter what challenges choiii dont, give up lang jud
+        always remember that you are capable of
+        beautiful things. Never stop believing in
+        yourself po.
+        </p>
+
+        <p>
+        I hope your birthday is filled with genuine
+        happiness, unforgettable memories, and
+        everything your heart wishes for.
+        </p>
+
+        <p>
+        Once again, Happy Birthday, Choii!
+        Your the most unforgettable memories that add to my pages 
+        this year you so mean to me, iloveyou and imissyousosomuch:< 💜
+        </p
+
+        <p style="text-align:right">
+        With love,<br>
+        Your Choiii ♡
+        </p>
+
+    </div>
+
+    <button onclick="showSurprise()">
+        >>> ✨
+    </button>
+
+    <div class="surprise" id="surprise">
+        <h3>One last thing... 💗</h3>
+        <p>
+        If I could wish for one thing today,
+        I hope your happy always without me, happy to your favorite persons
+        and always find reasons
+        to smile, courage to keep going, and
+        happiness in every season of your life.
+        </p>
+        <p>Take care always po, I always pray you to God, loveyou! IMYS choii 💜</p>
+        <div style="font-size:35px">💜✨🌷</div>
+    </div>
+
+    <div class="footer">
+        loveumychoithebest ♡
+    </div>
+
+</div>
+
+<script>
+function openLetter() {
+    document.getElementById("letter").style.display = "block";
+}
+
+function showSurprise() {
+    const surprise = document.getElementById("surprise");
+    surprise.style.display =
+        surprise.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
